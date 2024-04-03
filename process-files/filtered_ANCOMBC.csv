@@ -1,0 +1,12 @@
+taxon,p_GroupPLE,q_GroupPLE
+Cyanobacteria,1.06e-05,0.000127484
+Firmicutes_A,0.000199029,0.002189316
+Bacteroidota,0.003525752,0.032602213
+Campylobacterota,0.003260221,0.032602213
+Firmicutes_B,0.017002962,0.1360237
+Fusobacteriota,0.056825603,0.397779223
+Actinobacteriota,0.111461387,0.668768321
+Desulfobacterota,0.259375475,1.0
+Firmicutes,0.722431332,1.0
+Firmicutes_C,0.704228443,1.0
+Proteobacteria,0.376116706,1.0
