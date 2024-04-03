@@ -29,7 +29,7 @@ if stats_row_index is not None:
         combined_sheet_data.append(row)
 
 #Output: combined_summ_stats.csv
-output_combined_csv = 'combined_summ_stats.csv'
+output_combined_csv = 'L3_combined_summ_stats.csv'
 
 with open(output_combined_csv, 'w', newline='') as csvfile:
     writer = csv.writer(csvfile)
@@ -40,7 +40,7 @@ with open(output_combined_csv, 'w', newline='') as csvfile:
 #Initialize taxons contained in taxa-summary (ts)
 taxon_ts = []
 
-with open ('combined_summ_stats.csv', 'r', newline='') as csvfile:
+with open ('L3_combined_summ_stats.csv', 'r', newline='') as csvfile:
     reader = csv.reader(csvfile)
     
     for row in reader:
