@@ -7,7 +7,7 @@ import openpyxl
 from openpyxl import load_workbook
 
 #Import combined sheet from taxa-summary
-L2_wb = openpyxl.load_workbook("by-level/level-3-R.xlsx")
+L2_wb = openpyxl.load_workbook("by-level/L3/level-3-R.xlsx")
 
 combined_sheet_name = "combined"
 combined_sheet = L2_wb[combined_sheet_name]
@@ -29,7 +29,7 @@ if stats_row_index is not None:
         combined_sheet_data.append(row)
 
 #Output: combined_summ_stats.csv
-output_combined_csv = 'L3_combined_summ_stats.csv'
+output_combined_csv = 'by-level/L3/L3_combined_summ_stats.csv'
 
 with open(output_combined_csv, 'w', newline='') as csvfile:
     writer = csv.writer(csvfile)
@@ -40,7 +40,7 @@ with open(output_combined_csv, 'w', newline='') as csvfile:
 #Initialize taxons contained in taxa-summary (ts)
 taxon_ts = []
 
-with open ('L3_combined_summ_stats.csv', 'r', newline='') as csvfile:
+with open ('by-level/L3/L3_combined_summ_stats.csv', 'r', newline='') as csvfile:
     reader = csv.reader(csvfile)
     
     for row in reader:
@@ -52,14 +52,14 @@ taxon_ts = taxon_ts[2:]
 
 #remove everything before "p__"
 for i in range(len(taxon_ts)):
-        taxon_ts[i] = taxon_ts[i].split("p__")[1] 
+        taxon_ts[i] = taxon_ts[i].split("c__")[1] 
 
 #Extract taxon data from ANCOMBC
 taxon_list = []
 
 ANCOMBC_dict = {}
 
-with open("by-level/L3_class.csv", newline="") as L2_phylum_ABC:
+with open("by-level/L3/L3_class.csv", newline="") as L2_phylum_ABC:
     # Create csv reader object
     reader = csv.DictReader(L2_phylum_ABC, delimiter=",")
     
@@ -74,7 +74,7 @@ with open("by-level/L3_class.csv", newline="") as L2_phylum_ABC:
 
 #split row data to only include name
 for i in range(len(taxon_list)):
-    taxon_list[i] = taxon_list[i].split("p__")[1]
+    taxon_list[i] = taxon_list[i].split("c__")[1]
 
 #find common features
 def find_common_strings(list1, list2):
@@ -92,5 +92,5 @@ print("Common taxons:", common_taxons)
 #output list to test file L3_common_taxons.txt
 common_taxons_string = str(common_taxons)
 
-with open("L3_common_taxons.txt", 'w') as file:
+with open("by-level/L3/L3_common_taxons.txt", 'w') as file:
     file.write(common_taxons_string)

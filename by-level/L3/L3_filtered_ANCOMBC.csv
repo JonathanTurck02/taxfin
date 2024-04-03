@@ -1,0 +1,16 @@
+taxon,p_GroupPLE,q_GroupPLE
+Cyanobacteriia,5.68e-06,0.000102258
+Clostridia_A,3.58e-05,0.000609366
+Clostridia,7.36e-05,0.001177858
+Bacteroidia,0.002382031,0.035730464
+Campylobacteria,0.002403018,0.035730464
+Peptococcia,0.0092752,0.111302395
+Actinomycetia,0.011963755,0.131601301
+Alphaproteobacteria,0.01914963,0.191496302
+Fusobacteriia,0.052886153,0.475975379
+Coriobacteriia,0.098004241,0.784033929
+Other,0.119293054,0.83505138
+Desulfovibrionia,0.236980799,1.0
+Bacilli,0.695714131,1.0
+Negativicutes,0.649016684,1.0
+Gammaproteobacteria,0.590839434,1.0
