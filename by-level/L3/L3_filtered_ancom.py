@@ -30,7 +30,7 @@ filtered_data_dict = {}
 for taxon, values in new_ANCOMBC_dict.items():
     if taxon in common_taxons:
         filtered_data_dict[taxon] = values
-        
+
 with open('by-level/L3/L3_filtered_ANCOMBC.csv', 'w', newline='') as csvfile:
     # Create a CSV writer object
     csvwriter = csv.writer(csvfile)
@@ -40,5 +40,4 @@ with open('by-level/L3/L3_filtered_ANCOMBC.csv', 'w', newline='') as csvfile:
     for taxon, values in filtered_data_dict.items():
         csvwriter.writerow([taxon, values['p_GroupPLE'], values['q_GroupPLE']])
 
-print(filtered_data_dict)
 print(f"Successfully wrote L3_filtered_ancom.csv")
