@@ -1,1 +1,1 @@
-['Gammaproteobacteria', 'Other', 'Cyanobacteriia', 'Coriobacteriia', 'Desulfovibrionia', 'Fusobacteriia', 'Bacteroidia', 'Alphaproteobacteria', 'Peptococcia', 'Actinomycetia', 'Bacilli', 'Clostridia', 'Negativicutes', 'Clostridia_A', 'Campylobacteria']
+['Coriobacteriia', 'Desulfovibrionia', 'Bacteroidia', 'Actinomycetia', 'Bacilli', 'Fusobacteriia', 'Alphaproteobacteria', 'Cyanobacteriia', 'Peptococcia', 'Clostridia', 'Gammaproteobacteria', 'Clostridia_A', 'Campylobacteria', 'Negativicutes', 'Other']
