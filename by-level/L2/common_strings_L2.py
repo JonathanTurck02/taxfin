@@ -107,7 +107,7 @@ for i in range(len(taxon_list)):
 
 #print(taxon_list)
 
-#find common features
+#find cmmon features
 def find_common_strings(list1, list2):
     set1 = set(list1)
     set2 = set(list2)
